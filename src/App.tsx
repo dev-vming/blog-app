@@ -20,8 +20,8 @@ function App() {
       } else {
         setIsAuthenticated(false);
       }
+      setInit(true);
     })
-    setInit(true);
   }, [auth]);
 
   return (
