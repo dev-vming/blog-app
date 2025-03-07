@@ -47,6 +47,9 @@ export default function PostDetail() {
             </div>
             {post?.email === user?.email && (
               <div className="post__utils-box">
+                {post?.category && (
+                  <div className="post__category">{post?.category}</div>
+                )}
                 <div className="post__delete" onClick={handleDelete}>
                   삭제
                 </div>
