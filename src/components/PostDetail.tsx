@@ -16,12 +16,6 @@ export default function PostDetail() {
       const docRef = doc(db, "posts", id);
       const docSnap = await getDoc(docRef);
       setPost({ id: docSnap.id, ...(docSnap.data() as PostProps) });
-
-      if (docSnap.exists()) {
-        console.log(docSnap.data());
-      } else {
-        console.log("No Doc");
-      }
     }
   };
 
