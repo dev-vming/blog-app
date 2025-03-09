@@ -82,7 +82,7 @@ export default function PostList({
     if (confirm && id) {
       await deleteDoc(doc(db, "posts", id));
       toast.success("게시글을 삭제했습니다.");
-      getPosts(); // 변경된 포스트 리스트를 다시 가져옴
+      getPosts();
     }
   };
 
