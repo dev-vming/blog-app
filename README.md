@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+# React Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**배포 주소** : [React Blog로 이동](https://react-blog-ed639.web.app)
 
-## Available Scripts
+React를 활용하여 간단한 블로그 앱을 제작하였습니다.
+Firebase 기반 회원가입과 로그인, 게시물 CRUD와 댓글 기능, 배포를 진행하였습니다. 
 
-In the project directory, you can run:
+## 🌟 주요 기능
 
-### `yarn start`
+- 이메일 회원가입 / 로그인 기능
+- 게시물 카테고리 별 모아보기 기능
+- 작성자 별 (전체 글, 내가 쓴 글) 게시물 모아보기 기능
+- 게시물 작성, 자신의 게시물 편집 및 삭제 기능
+- 댓글 작성 및 자신의 댓글 삭제 기능
+- 다크 모드 지원
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠️ 기술 스택
+- **Frontend**
+  <p display="inline-block">
+  	<img src="https://img.shields.io/badge/react-61DAFB?style=flat&logo=react&logoColor=white" />
+  	<img src="https://img.shields.io/badge/typescript-3178C6?style=flat&logo=typescript&logoColor=white" />
+  </p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Backend & Deployment** (Firestore, Authentication, Hosting)
+  <p display="inline-block">
+    <img src="https://img.shields.io/badge/firebase-DD2C00?style=flat&logo=firebase&logoColor=white" /> 
+  </p>
 
-### `yarn test`
+## 📦 프로젝트 설치 및 실행
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/dev-vming/blog-app.git
+cd blog-app
+yarn install
+yarn start
+```
 
-### `yarn build`
+## 🚀 배포 방법
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn build
+yarn global add firebase-tools
+yarn firebase deploy
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
