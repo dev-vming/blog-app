@@ -18,7 +18,15 @@ interface PostListProps {
   defaultTab?: TabType | CategoryType;
 }
 
+export interface CommentType {
+  content: string;
+  uid: string;
+  email: string;
+  createdAt: string;
+}
+
 export interface PostProps {
+  comments?: CommentType[];
   id?: string;
   email: string;
   title: string;

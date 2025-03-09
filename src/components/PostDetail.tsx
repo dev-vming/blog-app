@@ -6,6 +6,7 @@ import { PostProps } from "./PostList";
 import Loader from "./Loader";
 import AuthContext from "context/AuthContext";
 import { toast } from "react-toastify";
+import Comments from "./Comments";
 
 export default function PostDetail() {
   const params = useParams();
@@ -35,9 +36,9 @@ export default function PostDetail() {
   }, [params?.id]);
 
   return (
-    <>
-      <div className="post__detail">
-        {post ? (
+    <div className="post__detail">
+      {post ? (
+        <>
           <div className="post__box">
             <div className="post__title">{post?.title}</div>
             <div className="post__profile-box">
@@ -62,10 +63,11 @@ export default function PostDetail() {
               {post?.content}
             </div>
           </div>
-        ) : (
-          <Loader />
-        )}
-      </div>
-    </>
+          <Comments post={post} getPost={getPost} />
+        </>
+      ) : (
+        <Loader />
+      )}
+    </div>
   );
 }
