@@ -1,6 +1,6 @@
 # React Blog
 
-**배포 주소** : [React Blog로 이동](https://react-blog-ed639.web.app)
+**배포 주소** : ~[React Blog로 이동](https://react-blog-ed639.web.app)~ **(배포 중단)**
 
 React를 활용하여 간단한 블로그 앱을 제작하였습니다.
 Firebase 기반 회원가입과 로그인, 게시물 CRUD와 댓글 기능, 배포를 진행하였습니다. 
